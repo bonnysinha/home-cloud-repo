@@ -1,0 +1,14 @@
+zuul:
+  prefix: /api
+  routes:
+    ms1:
+      path: /ms1/**
+      service-id: MS1
+    ms2:
+      path: /ms2/**
+      service-id: MS2
+spring:
+  application:
+    name: zuul-proxy-server
+  zipkin:
+    base-url: http://mc1:9411
